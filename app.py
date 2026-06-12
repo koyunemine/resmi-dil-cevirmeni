@@ -11,7 +11,7 @@ st.divider()
 
 # GİZLİ API ANAHTARIMIZ BURADA
 # Tırnakların içine kendi şifreni yapıştır:
-GIZLI_API_ANAHTARI = "AQ.Ab8RN6JcUfcls6Tu70mbf0DZ-vHOgo5xiVXWmCm-i3jRCqSoZg"
+genai.configure(api_key=st.secrets["API_KEY"])
 
 # 1. Adım: Alıcı Türü Seçimi 
 alici = st.selectbox("1. Adım: E-posta kime gönderilecek?", 
