@@ -30,7 +30,7 @@ if st.button("Profesyonel E-postaya Çevir ✨", use_container_width=True):
         with st.spinner("Yapay zeka e-postanızı hazırlıyor..."):
             try:
                 # Gemini bağlantısını kuruyoruz
-                genai.configure(api_key=GIZLI_API_ANAHTARI)
+                genai.configure(api_key=st.secrets["API_KEY"])
                 
                 # --- YENİ EKLENEN KISIM: MODELİ OTOMATİK BULMA ---
                 # Hata almamak için Google'a bağlanıp şifremizde çalışan en güncel modeli otomatik seçiyoruz
